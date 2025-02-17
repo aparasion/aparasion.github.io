@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bolesław Parasion - artysta rzeźbiarz ludowy, specjalizujący się w rzeźbach sakralnych i ludowych.">
     <meta name="author" content="Bolesław Parasion">
+    
+    <!-- Java for contact form -->    
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <title>Bolesław Parasion - Artysta Rzeźbiarz</title>
     
     <!-- Bootstrap CSS -->
@@ -50,6 +54,55 @@
         document.getElementById('email').innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
 </script>
 
+
+<h2>Kontakt</h2>
+    <form id="contact-form">
+        <label for="name">Imię i nazwisko (wymagane):</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Adres email (wymagane):</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="subject">Temat:</label><br>
+        <input type="text" id="subject" name="subject"><br><br>
+
+        <label for="message">Treść wiadomości:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Wyślij</button>
+    </form>
+<br /><br />
+    <script>
+        // Initialize EmailJS
+        emailjs.init("user_yourUserID"); // Replace with your EmailJS user ID
+
+        // Form submission event
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Get form values
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            // Send email using EmailJS service
+            emailjs.send("service_yourServiceID", "template_yourTemplateID", {
+                from_name: name,
+                from_email: email,
+                subject: subject,
+                message: message
+            })
+            .then(function(response) {
+                alert("Wiadomość została wysłana!");
+            }, function(error) {
+                alert("Wystąpił błąd. Spróbuj ponownie.");
+            });
+        });
+    </script>
+<br /><br />
+
+    
     <script>if(!window.picflow){window.picflow=!0;var s=document.createElement("script");s.src="https://picflow.com/embed/main.js";s.type='module';s.defer=true;document.head.appendChild(s);}</script><picflow-gallery id="gal_HPNgKI2KuSsJxn1f" tenant="tnt_lyQ72k86cycvAQ97" lightbox="#000000E6" no-background="true" show-cover="true"></picflow-gallery>
         <br />
         <br />
