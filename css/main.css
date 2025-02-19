@@ -99,7 +99,7 @@ a:hover {
   left: 50%;
   transform: translateX(-81%);
   background-color: #fff;
-  display: none;
+  display: top;
   flex-direction: column;
   min-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
