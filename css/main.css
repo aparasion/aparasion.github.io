@@ -99,12 +99,13 @@ a:hover {
   left: 50%;
   transform: translateX(-81%);
   background-color: #fff;
-  display: top;
+  display: none;
   flex-direction: column;
   min-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   text-align: left;
+  z-index: 9999;
 }
 
 .dropdown a {
