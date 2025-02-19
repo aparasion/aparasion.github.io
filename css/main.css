@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+  font-family: 'Noto Serif Hentaigana';
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 300;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+  margin-bottom: 15px;
+}
+
+/* Links */
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1756a9;
+}
+
+a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
+/* Layout */
+.wrapper {
+  max-width: calc(800px - (30px * 2));
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: calc(800px - 30px);
+    padding: 0 15px;
+  }
+}
+
+.wrapper:after, .footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header */
+.site-header {
+  border-top: 12px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 56px;
+  position: relative;
+}
+
+.site-title {
+  font-size: 26px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  color: #424242;
+}
+
+.site-title:visited {
+  color: #424242;
+}
+
+/* Navigation */
+.site-nav {
+  float: right;
+  position: relative;
+  text-align: center;
+}
+
+.site-nav a:hover {
+  color: #c1c1c1;
+}
+
+
+.site-nav .page-link {
+  color: #111;
+  line-height: 1.5;
+}
+
+.site-nav .page-link:not(:first-child) {
+  margin-left: 0px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-81%);
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.dropdown a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown a:hover {
+  background-color: #666;
+}
+
+.site-nav:hover .dropdown,
+.site-nav.open .dropdown {
+  display: flex;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .footer-col {
+    float: none;
+    width: calc(100% - 15px);
+  }
+}
+
+/* Page Content */
+.page-content {
+  padding: 20px 0;
+}
+
+.page-heading {
+  font-size: 20px;
+}
