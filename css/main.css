@@ -136,7 +136,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   .footer-col {
-    float: none;
+    float: center;
     width: calc(100% - 15px);
   }
 }
