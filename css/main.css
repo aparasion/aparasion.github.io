@@ -119,6 +119,7 @@ a:hover {
 
 .dropdown a:hover {
   background-color: #a4705e;
+  color: #fff;
 }
 
 .site-nav:hover .dropdown,
