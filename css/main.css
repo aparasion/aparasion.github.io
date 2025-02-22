@@ -28,7 +28,6 @@ a:visited {
 
 a:hover {
   color: #111;
-  border-bottom: 1px dotted gray;
 }
 
 /* Layout */
@@ -146,6 +145,10 @@ a:hover {
 .page-content {
   padding: 20px 0;
 }
+
+ .page-content a:hover {
+   border-bottom: 1px dotted gray;
+ }
 
 .page-heading {
   font-size: 20px;
