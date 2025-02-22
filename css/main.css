@@ -18,17 +18,17 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
 
 /* Links */
 a {
-  color: #85442d;
+  color: #c15731;
   text-decoration: none;
 }
 
 a:visited {
-  color: #a1948f;
+  color: #c15731;
 }
 
 a:hover {
   color: #111;
-  text-decoration: underline;
+  text-decoration: dotted;
 }
 
 /* Layout */
