@@ -28,7 +28,7 @@ a:visited {
 
 a:hover {
   color: #111;
-  text-decoration: dotted;
+  border-bottom: 1px dotted gray;
 }
 
 /* Layout */
