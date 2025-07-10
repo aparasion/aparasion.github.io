@@ -154,3 +154,9 @@ a:hover {
 .page-heading {
   font-size: 20px;
 }
+
+picflow-gallery .custom-button.center-button, picflow-gallery app-button-menu-item.featured .center-button.custom-button, picflow-root .custom-button.center-button, picflow-root app-button-menu-item.featured .center-button.custom-button {
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+}
